@@ -1,0 +1,43 @@
+* {
+font-family: monospace;
+font-size: 14px;
+}
+
+/* The background of the bar is black */
+window#waybar {
+    background-color: #000000;
+    background: transparent;
+    border-bottom: none;
+}
+
+/* All text and icons are white */
+#clock, #cpu, #memory, #battery, #tray, #pulseaudio, #network, #power-profiles-daemon, #temperature, #battery#bat2, #tray, #keyboard-state, #mpd, #backlight, #keyboard-state{
+background-color: #11111b;
+border: 1px solid #313244;
+border-radius: 16px;
+padding: 0 12px;
+margin: 4px 6px;
+}
+
+/* Highlight the active workspace with a solid white background and black text */
+#workspaces button.active {
+background-color: #000000;
+color: #ffffff;
+border-radius: 16px;
+padding: 0 12px;
+margin: 4px 5px;
+}
+#workspaces button {
+background-color: rgba(0, 0, 0, 0.3);
+color: #ffffff;
+border-radius: 16px;
+padding: 0 12px;
+margin: 4px 5px;
+transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+}
+#workspaces button:hover {
+background-color: #ffffff;
+color: #000000;
+border-radius: 16px;
+padding: 0 12px;
+}
